@@ -7,9 +7,9 @@ import io.vertx.core.Handler;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
 import com.github.matobet.doctor.document.DocumentService;
-import io.vertx.ext.apex.Router;
-import io.vertx.ext.apex.RoutingContext;
-import io.vertx.ext.apex.handler.BodyHandler;
+import io.vertx.ext.web.Router;
+import io.vertx.ext.web.RoutingContext;
+import io.vertx.ext.web.handler.BodyHandler;
 
 public class RestVerticle extends AbstractVerticle {
 

@@ -9,7 +9,7 @@ public abstract class BaseMongoService {
     protected final MongoClient mongoClient;
 
     public BaseMongoService(Vertx vertx) {
-        mongoClient = io.vertx.ext.mongo.MongoClient.createShared(vertx, new JsonObject()
+        mongoClient = MongoClient.createShared(vertx, new JsonObject()
                 .put("db_name", "doctor"));
     }
 
